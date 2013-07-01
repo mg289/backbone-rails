@@ -1,7 +1,7 @@
 (function($) {
   return $.extend($.fn, {
     backboneLink: function(model) {
-      return $(this).find(":input").not("skip-datalink").each(function() {
+      return $(this).find(":input").not(".skip-datalink").each(function() {
         var el, name;
         el = $(this);
         name = el.attr("name");
